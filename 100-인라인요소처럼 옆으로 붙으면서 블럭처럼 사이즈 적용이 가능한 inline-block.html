@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>인라인요소처럼 옆으로 붙으면서 블럭처럼 사이즈 적용이 가능한 inline-block</title>
+	<style>
+		
+		h1{
+			font-size:20px;
+			text-align:center;
+		}
+		
+		h1+p{
+			text-align:center;
+		}
+		
+		div>span{
+			display:inline-block;
+			width:100px;
+			height:100px;
+		}
+		
+		.box1{
+			background-color:red;
+		}
+		
+		.box2{
+			background-color:blue;
+		}
+		
+		.box3{
+			background-color:yellow;
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>UX 디자인 프로세스의 기초(Double Diamond Model)</h1>
+		
+		<p>
+			<img src="./images/Double-Diamond-Model.png" alt="더블 다이아몬드 모델" />
+		</p>
+		
+		<div>
+			<p><strong>Discover</strong> - Needs/Problem을 최대한 탐색</p>
+			<p><strong>Define</strong> - 집중하고자 하는 영역으로 Problem을 좁힘</p>
+			<p><strong>Develop</strong> - Problem을 해결할 수 있는 다양한 Solution을 탐색하는 과정</p>
+			<p><strong>Deliver</strong> - 그 중에서 가장 효과적인 Solution으로 좁혀나가는 과정</p>
+			<p><strong>Feedback</strong> - 사용자 테스트(사용성 테스트)를 진행하고 반영</p>
+		</div>
+		
+		<div>
+			<span class="box1">박스</span>
+			<span class="box2">박스</span>
+			<span class="box3">박스</span>
+		</div>
+		
+		<!--
+			1. inline-block : 인라인요소처럼 옆으로 붙으면서, 블럭요소처럼 크기 적용이 가능함
+			
+			2. 요소간의 줄바꿈은 한 칸의 공백으로 인식한다.
+			
+		-->
+	</div>
+</body>
+</html>
